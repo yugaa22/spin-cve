@@ -1,0 +1,10 @@
+enabled: false
+artifactId: quay.io/opsmxpublic/ubi8-gate:1.28.4_6.55.3-ubi8
+healthEndpoint: /health
+kubernetes:
+  useExecHealthCheck: false
+  podAnnotations:
+    moniker.spinnaker.io/application: spin
+
+env:
+  JAVA_OPTS: "-XX:MaxRAMPercentage=100.0"
